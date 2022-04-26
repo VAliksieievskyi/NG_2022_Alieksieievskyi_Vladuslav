@@ -5,20 +5,20 @@ using namespace std;
 int main()
 {
     cout << "Enter unknown numbers of square equation " << endl;
-    int numberA = 0, numberB = 0, numbreC = 0;
+    int a = 0, b = 0, c = 0;
     cout << "Enter a:";
-    cin >> numberA;
+    cin >> a;
     cout << "Enter b:";
-    cin >> numberB;
+    cin >> b;
     cout << "Enter c:";
-    cin >> numbreC;
-    float discriminant = 0;
-    discriminant =(numberB*numberB)-(4*numberA*numbreC);
-    if(discriminant<0)
+    cin >> c;
+    float D = 0;
+    D =(b*b)-(4*a*c);
+    if(D<0)
         cout << endl << "There are no roots" << endl;
-    else if(discriminant == 0)
-        cout << endl << "There are one root : " << -numberB/(2*numberA) << endl;
+    else if(D == 0)
+        cout << endl << "There are one root : " << -b/(2*a) << endl;
     else
-        cout << endl << "There are two roots : " << (-numberB+(discriminant/discriminant))/(2*numberA) <<" and "<< (-numberB-(discriminant/discriminant))/(2*numberA) << endl;
+        cout << endl << "There are two roots : " << (-b+(D/D))/(2*a) <<" and "<< (-b-(D/D))/(2*a) << endl;
     return 0;
 }
