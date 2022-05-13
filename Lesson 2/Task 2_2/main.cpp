@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     cout << "Enter your number" << endl;
-    long int number = 0,endNumber = 0;
+    int number = 0,endNumber = 0;
     cin >> number;
     do{
         if ((number % 2) == 0){
